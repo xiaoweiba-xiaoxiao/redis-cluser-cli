@@ -4,9 +4,12 @@
 使用方法
 1.构建成redis-cluster-cli的可执行文件。
 go build -o redis-cluster-cli
+
 2.配置文件
+
 cluster-config.yaml
-#配置如下
+#配置如下：
+
 redis:
   nodes:
   - 127.0.0.1:7000
