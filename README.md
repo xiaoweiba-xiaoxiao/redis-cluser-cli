@@ -3,23 +3,24 @@
 
 使用方法
 1.构建成redis-cluster-cli的可执行文件。
+````
 go build -o redis-cluster-cli
+````
+2.配置文件cluster-config.yaml
 
-2.配置文件
-
-cluster-config.yaml
-#配置如下：
-
+````
 redis:
   nodes:
   - 127.0.0.1:7000
   - 127.0.0.1:7001
   - 127.0.0.1:7002
-
+````
+3.使用命令举例
+````
 ./redis-cluster-cli -f cluster-config.yaml -cmd "keys admin::*"
 ./redis-cluster-cli -f cluster-config.yaml -cmd "del admin::*"
 ./redis-cluster-cli -f cluster-config.yaml -cmd "get admin::0357"
-
+````
 
 
 
