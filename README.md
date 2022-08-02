@@ -6,6 +6,7 @@
 go build -o redis-cluster-cli
 2.配置文件
 cluster-config.yaml
+#配置如下
 redis:
   nodes:
   - 127.0.0.1:7000
